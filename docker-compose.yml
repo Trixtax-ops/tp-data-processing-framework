@@ -3,7 +3,7 @@ services:
   my-scala-app:
     build:
       context: ./
-      dockerfile: Dockerfile
+      dockerfile:
     volumes:
       - ./:/usr/tp
       - .cache/:/root/.cache # trick to save coursier (sbt) cache
